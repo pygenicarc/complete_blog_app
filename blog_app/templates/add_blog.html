@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}add block page{% endblock %}
+
+{% block content %}
+
+<form method="POST" action="/submit">
+    <!-- Author Information -->
+    <label for="author_name" class="form-label">Author Name:</label>
+    <input type="text" id="author_name" name="author_name" required><br>
+
+    <label for="author_email">Author Email:</label>
+    <input type="email" id="author_email" name="author_email" required><br>
+
+    <label for="author_email">Author Mobile:</label>
+    <input type="text" id="author_mobile" name="author_mobile" required><br>
+
+    <label for="author_email">Author Address:</label>
+    <input type="text" id="author_address" name="author_address" required><br>
+
+    <!-- Blog Information -->
+    <label for="blog_title">Blog Title:</label>
+    <input type="text" id="blog_title" name="blog_title" required><br>
+
+    <label for="blog_content">Blog Content:</label>
+    <textarea id="blog_content" name="blog_content" rows="4" required></textarea><br>
+
+    <label for="blog_date">Author Mobile:</label>
+    <input type="text" id="blog_date" name="blog_date" required><br>
+
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
